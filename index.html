@@ -1699,9 +1699,7 @@ appearance-pinned-clientpref-0" lang="en" dir="ltr">
             <div class="mw-footer-container">
                 <footer id="footer" class="mw-footer">
                     <ul id="footer-info">
-                    <li id="footer-info-lastmod"> This page was last edited on 7 November 2024, at 22:51
-                        <span class="anonymous-show">&nbsp;(UTC)</span>.
-                    </li>
+                    <li id="footer-info-lastmod"></li>
                     <li id="footer-info-copyright">Text is available under the 
                         <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">
                             Creative Commons Attribution-ShareAlike 4.0 License
@@ -1725,9 +1723,39 @@ appearance-pinned-clientpref-0" lang="en" dir="ltr">
                 <li style="display: none;"><a href="#">Edit preview settings</a></li></ul>
                     <ul id="footer-icons" class="noprint">
                     <li id="footer-copyrightico"><a href="https://wikimediafoundation.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="wiki/wikimedia-button.svg" width="84" height="29" alt="Wikimedia Foundation" loading="lazy"></a></li>
-                    <li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="/wiki/poweredby_mediawiki.svg" alt="Powered by MediaWiki" width="88" height="31" loading="lazy"></a></li>
-                </ul>
+                    <li id="footer-poweredbyico">
+                        <a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled">
+                            <picture>
+                                <source media="(min-width: 500px)" srcset="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31">
+                                <img src="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy">
+                            </picture>
+                        </a>
+                    </li>
+					</ul>
                 </footer>
+				<script>
+                    function updateLastEdited() {
+                        const lastModified = new Date(document.lastModified);
+                        const optionsDate = {
+                            day: 'numeric',
+                            month: 'long',
+                            year: 'numeric',
+                            timeZone: 'UTC'
+                        };
+                        const optionsTime = {
+                            hour: '2-digit',
+                            minute: '2-digit',
+                            timeZone: 'UTC',
+                            hour12: false
+                        };
+                        // Format separately for clarity
+                        const formattedDate = lastModified.toLocaleDateString('en-GB', optionsDate);
+                        const formattedTime = lastModified.toLocaleTimeString('en-GB', optionsTime);
+                        document.getElementById('footer-info-lastmod').textContent = 
+                            `This page was last edited on ${formattedDate}, at ${formattedTime} (UTC).`;
+                    }
+                    updateLastEdited();
+                </script>
             </div>
         </div>
     </div>
@@ -1737,4 +1765,5 @@ appearance-pinned-clientpref-0" lang="en" dir="ltr">
     <div id="mw-teleport-target" class="vector-body"></div>
     <a accesskey="v" href="https://en.wikipedia.org/wiki/Nacionalista_Party?action=edit" class="oo-ui-element-hidden"></a>
 </body>
+
 </html>
