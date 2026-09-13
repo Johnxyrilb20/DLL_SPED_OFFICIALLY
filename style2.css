@@ -1,19 +1,21 @@
 /*WIKIPEDIA SECTION TOGGLE*/
-.togglewikipedia {
-    cursor: pointer;
-    color: #0645ad;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0;
+#wikipedia-section_SCOCER {display: none;margin-top: 10px;}
+/*SEARCH / FILTER*/
+#candidateSearch-SCOCER {
+    width: 100%;
+    max-width: 450px;
 }
-.togglewikipedia:hover {text-decoration: underline;}
-#wikipedia-section {display: none;margin-top: 10px;}
 /*HORIZONTAL TABLE SCROLL*/
 .table-scroll-SCOCER {
     width: 100%;
     overflow-x: auto;
     overflow-y: auto;
     max-height: 50rem;
+}
+#noResults {
+    display: none;
+    padding: 10px;
+    border: 1px solid #c8ccd1;
 }
 /*MOBILE*/
     @media (max-width: 600px) {
