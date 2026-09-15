@@ -1,6 +1,9 @@
 /*WIKIPEDIA SECTION TOGGLE*/
 #wikipedia-section_SCOCER {display: none;margin-top: 10px;}
 #wikipedia-section_SCOCER1 {display: none;margin-top: 10px;}
+#wikipedia-section_references {display: none;margin-top: 10px;}
+#wikipedia-section-see-also {display: none;margin-top: 10px;}
+#wikipedia-section-history {display: none;margin-top: 10px;}
 /*SEARCH / FILTER*/
 #candidateSearch-SCOCER {
     width: 100%;
