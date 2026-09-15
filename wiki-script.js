@@ -15,16 +15,55 @@ function toggleWikipedia_candidate() {
 /*ToggleWikipedia 1 number*/
 function toggleWikipedia_candidate1() {
   const section =
-    document.getElementById("wikipedia-section_SCOCER1");
-    if (
-    section.style.display === "none" ||
-    section.style.display === ""
-    ) {
-    section.style.display = "block";
-    } else {
-    section.style.display = "none";
-    }
-  }
+	    document.getElementById("wikipedia-section_SCOCER1");
+	    if (
+	    section.style.display === "none" ||
+	    section.style.display === ""
+	    ) {
+	    section.style.display = "block";
+	    } else {
+	    section.style.display = "none";
+	    }
+}
+/* ToggleWikipeida 2 History */
+function toggleWikipedia_history() {
+	const section =
+		document.getElementById("wikipedia-section-history");
+		if (
+		section.style.display === "none" ||
+		section.style.display === ""
+		) {
+		section.style.display = "block";
+		} else {
+		section.style.display = "none";
+		}
+}
+/* ToggleWikipedia 3 References */
+function toggleWikipedia_references() {
+	const section =
+		document.getElementById("wikipedia-section-references");
+		if (
+		section.style.display === "none" ||
+		section.style.display === ""
+		) {
+		section.style.display = "block";
+		} else {
+		section.style.display = "none";
+		}
+}
+/* ToggleWikipedia 4 See also */
+function toggleWikipedia_See_also() {
+	const section =
+		document.getElementById("wikipedia-section-see-also");
+		if (
+		section.style.display === "none" ||
+		section.style.display === ""
+		) {
+		section.style.display = "block";
+		} else {
+		section.style.display = "none";
+		}
+}
 /* SEARCH / FILTER CANDIDATES*/
 function filterCandidates_SCOCER() {
   const input =
