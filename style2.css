@@ -11,7 +11,7 @@
 }
 /*HORIZONTAL TABLE SCROLL*/
 .table-scroll-SCOCER {
-    width: 100%;
+    width: auto;
     overflow-x: auto;
     overflow-y: auto;
     max-height: 50rem;
