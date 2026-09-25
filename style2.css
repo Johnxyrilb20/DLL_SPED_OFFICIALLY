@@ -6,6 +6,8 @@
 #wikipedia-section-history {display: none;margin-top: 10px;}
 /*SEARCH / FILTER*/
 #candidateSearch-SCOCER {
+    font-size: 2em;
+    height: 1em;
     width: 100%;
     max-width: 450px;
 }
